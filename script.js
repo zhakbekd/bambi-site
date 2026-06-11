@@ -417,9 +417,58 @@ function validateForm(form) {
   return valid;
 }
 
+/* ===================== FORMSPREE ===================== */
+const FORMSPREE_URL = 'https://formspree.io/f/mbdezlbk';
+
+async function sendToFormspree(record) {
+  const typeLabels = { boyfriend: 'Парень ❤️', 'friend-m': 'Друг 🤝', 'friend-f': 'Подруга 🌸' };
+  const d = record.data || {};
+
+  // Build a clean readable payload
+  const payload = {
+    '📋 Тип встречи':     typeLabels[record.type] || record.type,
+    '👤 Имя':             record.name,
+    '🎂 Возраст':         d.age        || '—',
+    '📍 Город':           record.city  || '—',
+    '📅 Дата встречи':    formatDate(record.date),
+    '⏰ Время':            record.time,
+    // Social
+    '📸 Instagram':       d.instagram  || '—',
+    '✈️ Telegram':        d.telegram   || '—',
+    // About (boyfriend)
+    '💼 Чем занимается':  d.occupation || '—',
+    '🎮 Хобби':           d.hobby      || '—',
+    '🎬 Любимый фильм':   d.movie      || '—',
+    '🎵 Любимая музыка':  d.music      || '—',
+    '💬 Почему хочет встретиться': d.why       || '—',
+    '🌟 Ожидания':        d.expect     || '—',
+    '💕 Идеальное свидание': d.ideal_date || '—',
+    // Friend / girlfriend
+    '📍 Куда хочет пойти': d.place     || '—',
+    '🎯 Цель встречи':    d.goal       || '—',
+    '🎲 Формат':          d.format     || '—',
+    '🌺 Интересы':        d.interests  || '—',
+    '⏳ Свободное время': d.free_time  || '—',
+    // Meta
+    '_subject': `🌸 Новая заявка от ${record.name} — ${typeLabels[record.type]}`,
+    '_replyto': d.email || '',
+  };
+
+  try {
+    const res = await fetch(FORMSPREE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) console.warn('Formspree error:', res.status);
+  } catch (err) {
+    console.warn('Formspree fetch failed:', err);
+  }
+}
+
 /* ===================== FORM SUBMIT ===================== */
 function handleFormSubmit(formEl, type, calState, timeSlotsId) {
-  formEl.addEventListener('submit', (e) => {
+  formEl.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     if (!validateForm(formEl)) {
@@ -464,6 +513,19 @@ function handleFormSubmit(formEl, type, calState, timeSlotsId) {
       data,
       createdAt: new Date().toISOString(),
     };
+
+    // Show sending indicator
+    const btn = formEl.querySelector('.submit-btn');
+    const btnOrigHTML = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправляем...';
+    btn.disabled = true;
+
+    // Send to Formspree (email notification)
+    await sendToFormspree(record);
+
+    // Restore button
+    btn.innerHTML = btnOrigHTML;
+    btn.disabled = false;
 
     meetings.push(record);
     LS.set('bambi-meetings', meetings);
