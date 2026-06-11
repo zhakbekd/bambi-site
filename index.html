@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAMBI — Travel & Meet</title>
+  <meta name="description" content="Люблю путешествия, новые впечатления и интересные знакомства" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">BAMBI</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <div class="preloader-text">Загружаем мир приключений...</div>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">BAMBI</a>
+    <ul class="nav-links">
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#gallery">Места</a></li>
+      <li><a href="#booking">Встреча</a></li>
+      <li><a href="#calendar">Календарь</a></li>
+      <li><a href="#meetings">Встречи</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-btn" title="Сменить тему">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a href="#booking" class="nav-cta">Запланировать встречу</a>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" class="mm-link">Обо мне</a></li>
+    <li><a href="#gallery" class="mm-link">Места</a></li>
+    <li><a href="#booking" class="mm-link">Встреча</a></li>
+    <li><a href="#calendar" class="mm-link">Календарь</a></li>
+    <li><a href="#meetings" class="mm-link">Встречи</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-parallax" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✈️ Travel & Lifestyle</div>
+    <h1 class="hero-title">BAMBI</h1>
+    <p class="hero-subtitle">Люблю путешествия, новые впечатления<br>и интересные знакомства ✈️</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="stat-num">32</span><span class="stat-label">страны</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="stat-num">120+</span><span class="stat-label">городов</span></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="stat-num">∞</span><span class="stat-label">впечатлений</span></div>
+    </div>
+    <a href="#booking" class="hero-cta">Запланировать встречу</a>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about section">
+  <div class="container">
+    <div class="section-eyebrow">Знакомство</div>
+    <h2 class="section-title">Обо мне</h2>
+    <p class="section-sub">Я — BAMBI. Девушка, которая верит, что жизнь — это коллекция моментов. Каждое путешествие, каждое знакомство, каждая чашка кофе в незнакомом городе — это страница моей истории.</p>
+
+    <div class="about-grid">
+      <div class="about-card" data-delay="0">
+        <div class="about-icon">🌍</div>
+        <div class="about-card-title">Посетила стран</div>
+        <div class="about-card-value">32</div>
+        <p>Европа, Азия, Ближний Восток — каждый континент оставил след в сердце</p>
+      </div>
+      <div class="about-card" data-delay="100">
+        <div class="about-icon">🏙️</div>
+        <div class="about-card-title">Любимые города</div>
+        <div class="about-card-value">Токио · Бали · Париж</div>
+        <p>Три разных мира, три разных версии счастья</p>
+      </div>
+      <div class="about-card" data-delay="200">
+        <div class="about-icon">☕</div>
+        <div class="about-card-title">Кофе</div>
+        <div class="about-card-value">Ритуал</div>
+        <p>Утро в новом городе начинается с поиска идеальной кофейни</p>
+      </div>
+      <div class="about-card" data-delay="300">
+        <div class="about-icon">📸</div>
+        <div class="about-card-title">Фотографии</div>
+        <div class="about-card-value">Страсть</div>
+        <p>Ловлю моменты, которые невозможно описать словами</p>
+      </div>
+      <div class="about-card" data-delay="400">
+        <div class="about-icon">✈️</div>
+        <div class="about-card-title">Путешествия</div>
+        <div class="about-card-value">Образ жизни</div>
+        <p>Не отпуск — а постоянное состояние открытости к миру</p>
+      </div>
+      <div class="about-card" data-delay="500">
+        <div class="about-icon">💫</div>
+        <div class="about-card-title">Новые знакомства</div>
+        <div class="about-card-value">Энергия</div>
+        <p>Каждый человек — целая вселенная, которую интересно изучать</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery section">
+  <div class="container">
+    <div class="section-eyebrow">Маршруты</div>
+    <h2 class="section-title">Любимые места</h2>
+    <p class="section-sub">Города, которые навсегда изменили мой взгляд на мир</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item gallery-large" data-city="Париж">
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=80&auto=format&fit=crop" alt="Париж" loading="lazy" />
+      <div class="gallery-overlay">
+        <div class="gallery-info">
+          <div class="gallery-flag">🇫🇷</div>
+          <h3>Париж</h3>
+          <p>Город вечной романтики</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item" data-city="Бали">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80&auto=format&fit=crop" alt="Бали" loading="lazy" />
+      <div class="gallery-overlay">
+        <div class="gallery-info">
+          <div class="gallery-flag">🇮🇩</div>
+          <h3>Бали</h3>
+          <p>Остров богов</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item" data-city="Дубай">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80&auto=format&fit=crop" alt="Дубай" loading="lazy" />
+      <div class="gallery-overlay">
+        <div class="gallery-info">
+          <div class="gallery-flag">🇦🇪</div>
+          <h3>Дубай</h3>
+          <p>Город будущего</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item" data-city="Стамбул">
+      <img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=600&q=80&auto=format&fit=crop" alt="Стамбул" loading="lazy" />
+      <div class="gallery-overlay">
+        <div class="gallery-info">
+          <div class="gallery-flag">🇹🇷</div>
+          <h3>Стамбул</h3>
+          <p>Мост двух миров</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item" data-city="Токио">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80&auto=format&fit=crop" alt="Токио" loading="lazy" />
+      <div class="gallery-overlay">
+        <div class="gallery-info">
+          <div class="gallery-flag">🇯🇵</div>
+          <h3>Токио</h3>
+          <p>Гармония хаоса</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item gallery-large" data-city="Рим">
+      <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=900&q=80&auto=format&fit=crop" alt="Рим" loading="lazy" />
+      <div class="gallery-overlay">
+        <div class="gallery-info">
+          <div class="gallery-flag">🇮🇹</div>
+          <h3>Рим</h3>
+          <p>Вечный город</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="booking section">
+  <div class="container">
+    <div class="section-eyebrow">Знакомство</div>
+    <h2 class="section-title">Запланировать встречу</h2>
+    <p class="section-sub">Расскажи о себе, и мы найдём время для нашей встречи</p>
+
+    <!-- Type Selection -->
+    <div class="type-selection" id="typeSelection">
+      <div class="type-card" data-type="boyfriend" id="typeBoyfriend">
+        <div class="type-emoji">❤️</div>
+        <div class="type-title">Парень</div>
+        <div class="type-desc">Романтическое знакомство</div>
+      </div>
+      <div class="type-card" data-type="friend-m" id="typeFriendM">
+        <div class="type-emoji">🤝</div>
+        <div class="type-title">Друг</div>
+        <div class="type-desc">Дружеское общение</div>
+      </div>
+      <div class="type-card" data-type="friend-f" id="typeFriendF">
+        <div class="type-emoji">🌸</div>
+        <div class="type-title">Подруга</div>
+        <div class="type-desc">Женская дружба</div>
+      </div>
+    </div>
+
+    <!-- FORM: Парень -->
+    <form class="booking-form glass-form" id="formBoyfriend" novalidate>
+      <div class="form-header">
+        <div class="form-emoji">❤️</div>
+        <h3>Анкета — Парень</h3>
+        <p>Заполни анкету, чтобы BAMBI могла познакомиться с тобой ближе</p>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">👤 Личная информация</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Имя *</label>
+            <input type="text" name="name" placeholder="Как тебя зовут?" required />
+          </div>
+          <div class="form-group">
+            <label>Возраст *</label>
+            <input type="number" name="age" placeholder="Сколько лет?" min="18" max="60" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Рост</label>
+            <input type="number" name="height" placeholder="В сантиметрах" min="150" max="220" />
+          </div>
+          <div class="form-group">
+            <label>Дата рождения</label>
+            <input type="date" name="birthday" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Город *</label>
+          <input type="text" name="city" placeholder="Где живёшь?" required />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">📱 Социальные сети</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Instagram</label>
+            <div class="input-with-icon">
+              <i class="fab fa-instagram"></i>
+              <input type="text" name="instagram" placeholder="@username" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Telegram</label>
+            <div class="input-with-icon">
+              <i class="fab fa-telegram"></i>
+              <input type="text" name="telegram" placeholder="@username" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">💼 О себе</div>
+        <div class="form-group">
+          <label>Чем занимаешься?</label>
+          <input type="text" name="occupation" placeholder="Работа, учёба или что-то своё" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Хобби</label>
+            <input type="text" name="hobby" placeholder="Что делаешь в свободное время?" />
+          </div>
+          <div class="form-group">
+            <label>Любимый фильм</label>
+            <input type="text" name="movie" placeholder="Назови любимый фильм" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Любимая музыка</label>
+          <input type="text" name="music" placeholder="Что слушаешь?" />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">💬 Вопросы</div>
+        <div class="form-group">
+          <label>Почему хочешь встретиться с BAMBI? *</label>
+          <textarea name="why" placeholder="Расскажи откровенно..." rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Что ожидаешь от встречи?</label>
+          <textarea name="expect" placeholder="Твои ожидания..." rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Каким видишь идеальное свидание?</label>
+          <textarea name="ideal_date" placeholder="Опиши своё идеальное свидание..." rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">📷 Фотография</div>
+        <div class="file-upload" id="fileUploadBf">
+          <input type="file" id="photoBf" name="photo" accept="image/*" />
+          <label for="photoBf">
+            <i class="fas fa-camera"></i>
+            <span>Загрузи своё фото</span>
+            <small>JPG, PNG до 5MB</small>
+          </label>
+          <div class="file-preview" id="previewBf"></div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">📅 Выбери дату встречи *</div>
+        <div class="inline-calendar" id="inlineCalBf" data-form="boyfriend"></div>
+        <div class="time-select-wrap" id="timeBfWrap" style="display:none">
+          <label>Время встречи *</label>
+          <div class="time-slots" id="timeSlotsBf"></div>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        <span>Отправить анкету</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+
+    <!-- FORM: Друг -->
+    <form class="booking-form glass-form" id="formFriendM" novalidate>
+      <div class="form-header">
+        <div class="form-emoji">🤝</div>
+        <h3>Анкета — Друг</h3>
+        <p>Расскажи немного о себе и чём хочешь провести время</p>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">👤 О тебе</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Имя *</label>
+            <input type="text" name="name" placeholder="Как тебя зовут?" required />
+          </div>
+          <div class="form-group">
+            <label>Возраст *</label>
+            <input type="number" name="age" placeholder="Сколько лет?" min="18" max="60" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Город *</label>
+          <input type="text" name="city" placeholder="Где живёшь?" required />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">🎯 О встрече</div>
+        <div class="form-group">
+          <label>Куда хочешь сходить? *</label>
+          <input type="text" name="place" placeholder="Предложи место" required />
+        </div>
+        <div class="form-group">
+          <label>Чем предлагаешь заняться?</label>
+          <textarea name="activity" placeholder="Опиши своё предложение..." rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Цель встречи</label>
+          <input type="text" name="goal" placeholder="Зачем хочешь познакомиться?" />
+        </div>
+        <div class="form-group">
+          <label>Любимые развлечения</label>
+          <input type="text" name="entertainment" placeholder="Что тебе нравится?" />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">🎲 Формат встречи</div>
+        <div class="tags-select" id="tagsFriendM">
+          <div class="tag-btn" data-val="cafe">☕ Кафе</div>
+          <div class="tag-btn" data-val="cinema">🎬 Кино</div>
+          <div class="tag-btn" data-val="walk">🚶 Прогулка</div>
+          <div class="tag-btn" data-val="sport">⚽ Спорт</div>
+          <div class="tag-btn" data-val="games">🎲 Настолки</div>
+          <div class="tag-btn" data-val="travel">✈️ Путешествие</div>
+          <div class="tag-btn" data-val="other">💡 Другое</div>
+        </div>
+        <input type="hidden" name="format" id="formatFriendM" />
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">📅 Выбери дату встречи *</div>
+        <div class="inline-calendar" id="inlineCalFm" data-form="friend-m"></div>
+        <div class="time-select-wrap" id="timeFmWrap" style="display:none">
+          <label>Время встречи *</label>
+          <div class="time-slots" id="timeSlotsFm"></div>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        <span>Отправить анкету</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+
+    <!-- FORM: Подруга -->
+    <form class="booking-form glass-form" id="formFriendF" novalidate>
+      <div class="form-header">
+        <div class="form-emoji">🌸</div>
+        <h3>Анкета — Подруга</h3>
+        <p>Расскажи о себе — подруги сразу понимают друг друга!</p>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">👤 О тебе</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Имя *</label>
+            <input type="text" name="name" placeholder="Как тебя зовут?" required />
+          </div>
+          <div class="form-group">
+            <label>Возраст *</label>
+            <input type="number" name="age" placeholder="Сколько лет?" min="18" max="60" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Город *</label>
+          <input type="text" name="city" placeholder="Где живёшь?" required />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">🌺 О встрече</div>
+        <div class="form-group">
+          <label>Куда хочешь пойти?</label>
+          <input type="text" name="place" placeholder="Предложи место" />
+        </div>
+        <div class="form-group">
+          <label>Зачем хочешь встретиться? *</label>
+          <textarea name="why" placeholder="Расскажи о себе и своих ожиданиях..." rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Интересы</label>
+          <input type="text" name="interests" placeholder="Что тебя увлекает?" />
+        </div>
+        <div class="form-group">
+          <label>Что любишь делать в свободное время?</label>
+          <textarea name="free_time" placeholder="Расскажи как проводишь время..." rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">🌷 Формат встречи</div>
+        <div class="tags-select" id="tagsFriendF">
+          <div class="tag-btn" data-val="coffee">☕ Кофейня</div>
+          <div class="tag-btn" data-val="restaurant">🍽️ Ресторан</div>
+          <div class="tag-btn" data-val="walk">🌿 Прогулка</div>
+          <div class="tag-btn" data-val="shopping">🛍️ Шопинг</div>
+          <div class="tag-btn" data-val="photo">📸 Фотосессия</div>
+          <div class="tag-btn" data-val="travel">✈️ Путешествие</div>
+          <div class="tag-btn" data-val="other">💡 Другое</div>
+        </div>
+        <input type="hidden" name="format" id="formatFriendF" />
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">📅 Выбери дату встречи *</div>
+        <div class="inline-calendar" id="inlineCalFf" data-form="friend-f"></div>
+        <div class="time-select-wrap" id="timeFfWrap" style="display:none">
+          <label>Время встречи *</label>
+          <div class="time-slots" id="timeSlotsFf"></div>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        <span>Отправить анкету</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- CALENDAR -->
+<section id="calendar" class="calendar-section section">
+  <div class="container">
+    <div class="section-eyebrow">Расписание</div>
+    <h2 class="section-title">Свободные даты</h2>
+    <p class="section-sub">Выбери удобный день для нашей встречи</p>
+
+    <div class="calendar-legend">
+      <div class="legend-item"><span class="legend-dot free"></span>Свободно</div>
+      <div class="legend-item"><span class="legend-dot busy"></span>Занято</div>
+      <div class="legend-item"><span class="legend-dot past"></span>Прошедшая дата</div>
+    </div>
+
+    <div class="main-calendar glass-form">
+      <div class="cal-header">
+        <button class="cal-nav" id="calPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="cal-month-year" id="calMonthYear"></div>
+        <button class="cal-nav" id="calNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="cal-weekdays">
+        <div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div>
+      </div>
+      <div class="cal-days" id="calDays"></div>
+    </div>
+
+    <div class="cal-modal" id="calModal">
+      <div class="cal-modal-inner glass-form">
+        <div class="cal-modal-date" id="calModalDate"></div>
+        <div class="cal-modal-status" id="calModalStatus"></div>
+        <button class="cal-modal-close" id="calModalClose"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEETINGS TABLE -->
+<section id="meetings" class="meetings-section section">
+  <div class="container">
+    <div class="section-eyebrow">Записи</div>
+    <h2 class="section-title">Запланированные встречи</h2>
+    <p class="section-sub">Все поданные заявки на встречу</p>
+
+    <div class="meetings-controls glass-form">
+      <div class="search-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="meetingsSearch" placeholder="Поиск по имени..." />
+      </div>
+      <div class="sort-wrap">
+        <label>Сортировка:</label>
+        <select id="meetingsSort">
+          <option value="date-asc">По дате ↑</option>
+          <option value="date-desc">По дате ↓</option>
+          <option value="name">По имени</option>
+          <option value="type">По типу</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="meetings-table-wrap glass-form">
+      <table class="meetings-table">
+        <thead>
+          <tr>
+            <th>Кто</th>
+            <th>Тип</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Город</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="meetingsBody">
+        </tbody>
+      </table>
+      <div class="meetings-empty" id="meetingsEmpty">
+        <i class="fas fa-calendar-times"></i>
+        <p>Встреч пока нет. Будь первым!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">BAMBI</div>
+    <p class="footer-tagline">Путешествуй. Встречай. Вдохновляйся.</p>
+    <div class="footer-links">
+      <a href="#about">Обо мне</a>
+      <a href="#gallery">Места</a>
+      <a href="#booking">Встреча</a>
+      <a href="#calendar">Календарь</a>
+    </div>
+    <div class="footer-copy">© 2026 BAMBI — All rights reserved</div>
+  </div>
+</footer>
+
+<!-- TOAST CONTAINER -->
+<div id="toastContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
